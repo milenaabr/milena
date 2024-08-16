@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilogia filmes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: rgb(102, 2, 2);
+        }
+        .video-container{
+            margin: 20px 0;
+            text-align: center;
+        }
+        h2{
+            margin: bottom 10px;
+        }
+        .produtos-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trilogia filmes de terror</h1>
+        <nav>
+            <button onclick="showSection('Invocação do mal')">Invocação do mal</button>
+            <button onclick="showSection('Anabelle')">Anabelle</button>
+            <button onclick="showSection('Outros')">Outros</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Invocação do mal" class="produtos-section">
+            <div class="video-container" data-title="1971">
+                <h2>1971</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GQrrXceHn2E?si=JXlVJcZ-Xc93H5IG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+            </div>
+            <div class="video-container" data-title="1977">
+                <h2>1977</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5gN2uH3EJFU?si=HOJMxf-EiohoS9Ge" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-container" data-title="1981">
+                <h2>1981</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MuBXgZ771aI?si=RnAplDDUeQI1rMk9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="Anabelle" class="produtos-section">
+             <div class="video-container"  data-title="1967">
+                <h2>1967</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xabuZwG3XyM?si=OX4195C_8qA5kFrb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-container"data title="1955">
+                <h2>1955</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EjZkJa6Z-SY?si=H--u8Jefydte73TX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <div class="video-container" data-title="1972">
+           <h2>1972</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/etiDmAF617E?si=KRJABC_tj3EDb5hX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="Outros" class="produtos-section">
+            <div class="video-container" data-title="1952">
+                <h2>1952</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4V44ew-laC4?si=sUVYy0EwusXPcSsJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="video-container" data-title="1956">
+            <h2>1956</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0JZ8WGVSrwM?si=g6IUuEGT1DWivckF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-container" data-title="1673/1973">
+            <h2>1673/1973</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FQLtbJtRnqY?si=ia354R8pHUXwxqIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.produtos-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
